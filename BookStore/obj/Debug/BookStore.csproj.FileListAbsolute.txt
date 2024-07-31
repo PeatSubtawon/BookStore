@@ -27,3 +27,11 @@ C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\BookStore.csproj.CoreCo
 C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\BookStore.csproj.Up2Date
 C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\BookStore.exe
 C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\BookStore.pdb
+C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\Menu.g.cs
+C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\Menu.baml
+C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\Books.g.cs
+C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\Books.baml
+C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\Customers.g.cs
+C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\Transaction.g.cs
+C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\Customers.baml
+C:\Users\User\source\repos\BookStore\BookStore\obj\Debug\Transaction.baml
