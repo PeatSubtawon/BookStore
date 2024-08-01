@@ -66,9 +66,9 @@ namespace BookStore
         }
         private void SearchBtn_Click(object sender, RoutedEventArgs e)
         {
-            string customersId = Customers_IdTxt.Text;
+            string inputCustomersId = Customers_IdTxt.Text;
 
-            List<string> data = CustomersData.GetData(customersId);
+            List<string> data = CustomersData.GetData(inputCustomersId);
             if (data != null && data.Count > 0) 
             {
                 string showData = "";
@@ -135,9 +135,9 @@ namespace BookStore
         {
             string inputCustomersId = DeleteIdTxt.Text;
             // ตรวจสอบว่ามีข้อมูลลูกค้าในฐานข้อมูลก่อนที่จะลบ
-            List<string> customerData = CustomersData.GetData(inputCustomersId);
+            List<string> customersData = CustomersData.GetData(inputCustomersId);
 
-            if (customerData.Count == 0)
+            if (customersData.Count == 0)
             {
                 // แสดงข้อความหาก ID ไม่พบในฐานข้อมูล
                 MessageBox.Show("ไม่มี ID ที่กรอก", "Error");
@@ -145,7 +145,7 @@ namespace BookStore
             }
 
             // ลบข้อมูลลูกค้า
-            CustomersData.DelteCustomersData(inputCustomersId);
+            CustomersData.DeleteCustomersData(inputCustomersId);
 
             // แสดงข้อความยืนยันการลบ
             MessageBox.Show("ข้อมูลลูกค้าถูกลบเรียบร้อยแล้ว", "Success");

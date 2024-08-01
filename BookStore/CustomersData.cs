@@ -43,14 +43,14 @@ namespace BookStore
             }
         }
         //-----SEARCH CUSTOMER ID-----
-        public static List<String> GetData(string customersId)
+        public static List<String> GetData(string inputCustomersId)
         {
             List<String> entries = new List<string>();
             using (SqliteConnection db = new SqliteConnection($"Filename=sqliteData.db"))
             {
                 db.Open();
                 SqliteCommand selectCommand = new SqliteCommand("SELECT * from Customers WHERE Customers_Id = @CustomerId", db);
-                selectCommand.Parameters.AddWithValue("@CustomerId", customersId);
+                selectCommand.Parameters.AddWithValue("@CustomerId", inputCustomersId);
 
                 SqliteDataReader query = selectCommand.ExecuteReader();
                 while (query.Read())
@@ -98,7 +98,7 @@ namespace BookStore
             }
         }
         //-----DELETE CUSTOMER DATA-----
-        public static void DelteCustomersData(string inputCustomersId)
+        public static void DeleteCustomersData(string inputCustomersId)
         {
             using (SqliteConnection db = new SqliteConnection($"Filename=sqliteData.db"))
             {
