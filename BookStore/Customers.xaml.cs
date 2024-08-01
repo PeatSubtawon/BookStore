@@ -24,6 +24,7 @@ namespace BookStore
         public Customers()
         {
             InitializeComponent();
+            EditIdTxt.TextChanged += EditIdTxt_TextChanged;
         }
         private void CustomersBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -151,5 +152,47 @@ namespace BookStore
             MessageBox.Show("ข้อมูลลูกค้าถูกลบเรียบร้อยแล้ว", "Success");
         }
 
+
+        //-----TEXT CHANGE IN EDIT-----
+        private void EditIdTxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string id = EditIdTxt.Text;
+
+            if (!string.IsNullOrEmpty(id))
+            {
+                try
+                {
+                    List<string> customerInfo = CustomersData.GetData(id);
+
+                    if (customerInfo.Count > 0)
+                    {
+                        // Assuming you have corresponding TextBox for displaying Customers_Name, Address, and Email
+                        string[] customerDetails = customerInfo[0].Split('\n');
+                        EditCustomers_NameTxt.Text = customerDetails[1].Split(':')[1].Trim();
+                        EditAddressTxt.Text = customerDetails[2].Split(':')[1].Trim();
+                        EditEmailTxt.Text = customerDetails[3].Split(':')[1].Trim();
+                    }
+                    else
+                    {
+                        ClearTextBoxes();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle any errors that might occur
+                    MessageBox.Show("เกิดข้อผิดพลาด: " + ex.Message);
+                }
+            }
+            else
+            {
+                ClearTextBoxes();
+            }
+        }
+        private void ClearTextBoxes()
+        {
+            if (EditCustomers_NameTxt != null) EditCustomers_NameTxt.Text = string.Empty;
+            if (EditAddressTxt != null) EditAddressTxt.Text = string.Empty;
+            if (EditEmailTxt != null) EditEmailTxt.Text = string.Empty;
+        }
     }
 }

@@ -22,6 +22,8 @@ namespace BookStore
         public Books()
         {
             InitializeComponent();
+            EditISBNTxt.TextChanged += EditISBNTxt_TextChanged;
+            
         }
         private void CustomersBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -146,6 +148,48 @@ namespace BookStore
 
             // แสดงข้อความยืนยันการลบ
             MessageBox.Show("ข้อมูลหนังสือถูกลบเรียบร้อยแล้ว", "Success");
+        }
+
+        //-----TEXT CHANGE IN EDIT-----
+        private void EditISBNTxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string isbn = EditISBNTxt.Text;
+
+            if (!string.IsNullOrEmpty(isbn))
+            {
+                try
+                {
+                    List<string> bookInfo = BooksData.GetBooks(isbn);
+
+                    if (bookInfo.Count > 0)
+                    {
+                        // Assuming you have corresponding TextBox for displaying Title, Description, and Price
+                        string[] bookDetails = bookInfo[0].Split('\n');
+                        EditTitleTxt.Text = bookDetails[1].Split(':')[1].Trim();
+                        EditDescriptionTxt.Text = bookDetails[2].Split(':')[1].Trim();
+                        EditPriceTxt.Text = bookDetails[3].Split(':')[1].Trim();
+                    }
+                    else
+                    {
+                        ClearTextBoxes();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Handle any errors that might occur
+                    MessageBox.Show("เกิดข้อผิดพลาด: " + ex.Message);
+                }
+            }
+            else
+            {
+                ClearTextBoxes();
+            }
+        }
+        private void ClearTextBoxes()
+        {
+            if (EditTitleTxt != null) EditTitleTxt.Text = string.Empty;
+            if (EditDescriptionTxt != null) EditDescriptionTxt.Text = string.Empty;
+            if (EditPriceTxt != null) EditPriceTxt.Text = string.Empty;
         }
     }
 }

@@ -18,7 +18,7 @@
         <TextBox x:Name="AddDescriptionTxt" HorizontalAlignment="Left" Height="27" Margin="60,256,0,0" TextWrapping="Wrap" Text="คำอธิบายหนังสือ" VerticalAlignment="Top" Width="148"/>
         <TextBox x:Name="AddPriceTxt" HorizontalAlignment="Left" Height="27" Margin="60,288,0,0" TextWrapping="Wrap" Text="ราคาหนังสือ" VerticalAlignment="Top" Width="148"/>
         <TextBox x:Name="ISBNTxt" HorizontalAlignment="Left" Height="27" Margin="240,224,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="EditISBNTxt" HorizontalAlignment="Left" Height="27" Margin="419,224,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="EditISBNTxt" HorizontalAlignment="Left" Height="27" Margin="419,224,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148" TextChanged="EditISBNTxt_TextChanged"/>
         <TextBox x:Name="EditTitleTxt" HorizontalAlignment="Left" Height="27" Margin="419,256,0,0" TextWrapping="Wrap" Text="ชื่อหนังสือ" VerticalAlignment="Top" Width="148"/>
         <TextBox x:Name="EditDescriptionTxt" HorizontalAlignment="Left" Height="27" Margin="419,288,0,0" TextWrapping="Wrap" Text="คำอธิบายหนังสือ" VerticalAlignment="Top" Width="148"/>
         <TextBox x:Name="EditPriceTxt" HorizontalAlignment="Left" Height="27" Margin="419,320,0,0" TextWrapping="Wrap" Text="ราคาหนังสือ" VerticalAlignment="Top" Width="148"/>

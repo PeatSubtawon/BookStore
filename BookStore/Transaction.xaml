@@ -10,5 +10,6 @@
         <Button x:Name="CustomersBtn" Content="จัดการข้อมูลลูกค้า" HorizontalAlignment="Left" Height="58" Margin="134,28,0,0" VerticalAlignment="Top" Width="145" Click="CustomersBtn_Click"/>
         <Button x:Name="BooksBtn" Content="จัดการข้อมูลหนังสือ" HorizontalAlignment="Center" Height="58" Margin="0,28,0,0" VerticalAlignment="Top" Width="144" Click="BooksBtn_Click"/>
         <Button x:Name="TransactionBtn" Content="สั่งซื้อหนังสือ" HorizontalAlignment="Left" Height="58" Margin="531,28,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="2.752,0.587" Click="TransactionBtn_Click"/>
+        
     </Grid>
 </Window>
