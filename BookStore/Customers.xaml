@@ -11,19 +11,28 @@
         <Button x:Name="SearchBtn" Content="ค้นหาข้อมูลลูกค้า" HorizontalAlignment="Left" Height="33" Margin="240,170,0,0" VerticalAlignment="Top" Width="148" Click="SearchBtn_Click"/>
         <Button x:Name="EditCustomersBtn" Content="แก้ไขข้อมูลลูกค้า" HorizontalAlignment="Left" Height="84" Margin="419,119,0,0" VerticalAlignment="Top" Width="148" Click="EditCustomersBtn_Click"/>
         <Button x:Name="DeleteCustomersBtn" Content="ลบข้อมูลลูกค้า" HorizontalAlignment="Left" Height="84" Margin="602,119,0,0" VerticalAlignment="Top" Width="148" Click="DeleteCustomersBtn_Click"/>
-        <TextBox x:Name="AddCustomers_NameTxt" HorizontalAlignment="Left" Height="27" Margin="60,224,0,0" TextWrapping="Wrap" Text="ชื่อ" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="AddAddressTxt" HorizontalAlignment="Left" Height="27" Margin="60,256,0,0" TextWrapping="Wrap" Text="ที่อยู่" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="AddEmailTxt" HorizontalAlignment="Left" Height="27" Margin="60,288,0,0" TextWrapping="Wrap" Text="อีเมล" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="Customers_IdTxt" HorizontalAlignment="Left" Height="27" Margin="240,224,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="EditIdTxt" HorizontalAlignment="Left" Height="27" Margin="419,224,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="148" TextChanged="EditIdTxt_TextChanged"/>
-        <TextBox x:Name="EditCustomers_NameTxt" HorizontalAlignment="Left" Height="27" Margin="419,256,0,0" TextWrapping="Wrap" Text="ชื่อ" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="EditAddressTxt" HorizontalAlignment="Left" Height="27" Margin="419,288,0,0" TextWrapping="Wrap" Text="ที่อยู่" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="EditEmailTxt" HorizontalAlignment="Left" Height="27" Margin="419,320,0,0" TextWrapping="Wrap" Text="อีเมล" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="DeleteIdTxt" HorizontalAlignment="Left" Height="27" Margin="602,224,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="AddCustomers_NameTxt" HorizontalAlignment="Left" Height="26" Margin="60,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="AddAddressTxt" HorizontalAlignment="Left" Height="28" Margin="60,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="AddEmailTxt" HorizontalAlignment="Left" Height="27" Margin="60,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="Customers_IdTxt" HorizontalAlignment="Left" Height="27" Margin="240,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="EditIdTxt" HorizontalAlignment="Left" Height="27" Margin="419,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" TextChanged="EditIdTxt_TextChanged"/>
+        <TextBox x:Name="EditCustomers_NameTxt" HorizontalAlignment="Left" Height="27" Margin="419,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="EditAddressTxt" HorizontalAlignment="Left" Height="26" Margin="419,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="EditEmailTxt" HorizontalAlignment="Left" Height="26" Margin="419,395,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="DeleteIdTxt" HorizontalAlignment="Left" Height="27" Margin="602,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
         <Button x:Name="CustomersBtn" Content="จัดการข้อมูลลูกค้า" HorizontalAlignment="Left" Height="58" Margin="134,28,0,0" VerticalAlignment="Top" Width="145" Click="CustomersBtn_Click"/>
         <Button x:Name="BooksBtn" Content="จัดการข้อมูลหนังสือ" HorizontalAlignment="Center" Height="58" Margin="0,28,0,0" VerticalAlignment="Top" Width="144" Click="BooksBtn_Click"/>
         <Button x:Name="TransactionBtn" Content="สั่งซื้อหนังสือ" HorizontalAlignment="Left" Height="58" Margin="531,28,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="2.752,0.587" Click="TransactionBtn_Click"/>
         <Button x:Name="SearchAllBtn" Content="ดูข้อมูลลูกค้าทั้งหมด" HorizontalAlignment="Left" Height="33" Margin="240,119,0,0" VerticalAlignment="Top" Width="148" Click="SearchAllBtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="60,222,0,0" TextWrapping="Wrap" Text="ชื่อ" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="60,274,0,0" TextWrapping="Wrap" Text="ที่อยู่" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="60,327,0,0" TextWrapping="Wrap" Text="อีเมล" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="240,222,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="419,222,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="419,274,0,0" TextWrapping="Wrap" Text="ชื่อ" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="419,327,0,0" TextWrapping="Wrap" Text="ที่อยู่" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="419,379,0,0" TextWrapping="Wrap" Text="อีเมล" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="602,222,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Width="148"/>
 
     </Grid>
 </Window>

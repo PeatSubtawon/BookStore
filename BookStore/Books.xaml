@@ -14,15 +14,24 @@
         <Button x:Name="SearchBtn" Content="ค้นหาข้อมูลหนังสือ" HorizontalAlignment="Left" Height="33" Margin="240,170,0,0" VerticalAlignment="Top" Width="148" Click="SearchBtn_Click"/>
         <Button x:Name="EditBooksBtn" Content="แก้ไขข้อมูลหนังสือ" HorizontalAlignment="Left" Height="84" Margin="419,119,0,0" VerticalAlignment="Top" Width="148" Click="EditBooksBtn_Click"/>
         <Button x:Name="DeleteBooksBtn" Content="ลบข้อมูลหนังสือ" HorizontalAlignment="Left" Height="84" Margin="602,119,0,0" VerticalAlignment="Top" Width="148" Click="DeleteBooksBtn_Click"/>
-        <TextBox x:Name="AddTitleTxt" HorizontalAlignment="Left" Height="27" Margin="60,224,0,0" TextWrapping="Wrap" Text="ชื่อหนังสือ" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="AddDescriptionTxt" HorizontalAlignment="Left" Height="27" Margin="60,256,0,0" TextWrapping="Wrap" Text="คำอธิบายหนังสือ" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="AddPriceTxt" HorizontalAlignment="Left" Height="27" Margin="60,288,0,0" TextWrapping="Wrap" Text="ราคาหนังสือ" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="ISBNTxt" HorizontalAlignment="Left" Height="27" Margin="240,224,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="EditISBNTxt" HorizontalAlignment="Left" Height="27" Margin="419,224,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148" TextChanged="EditISBNTxt_TextChanged"/>
-        <TextBox x:Name="EditTitleTxt" HorizontalAlignment="Left" Height="27" Margin="419,256,0,0" TextWrapping="Wrap" Text="ชื่อหนังสือ" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="EditDescriptionTxt" HorizontalAlignment="Left" Height="27" Margin="419,288,0,0" TextWrapping="Wrap" Text="คำอธิบายหนังสือ" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="EditPriceTxt" HorizontalAlignment="Left" Height="27" Margin="419,320,0,0" TextWrapping="Wrap" Text="ราคาหนังสือ" VerticalAlignment="Top" Width="148"/>
-        <TextBox x:Name="DeleteISBNTxt" HorizontalAlignment="Left" Height="27" Margin="602,224,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="AddTitleTxt" HorizontalAlignment="Left" Height="27" Margin="60,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="AddDescriptionTxt" HorizontalAlignment="Left" Height="27" Margin="60,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="AddPriceTxt" HorizontalAlignment="Left" Height="27" Margin="60,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="ISBNTxt" HorizontalAlignment="Left" Height="27" Margin="240,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="EditISBNTxt" HorizontalAlignment="Left" Height="27" Margin="419,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" TextChanged="EditISBNTxt_TextChanged"/>
+        <TextBox x:Name="EditTitleTxt" HorizontalAlignment="Left" Height="27" Margin="419,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="EditDescriptionTxt" HorizontalAlignment="Left" Height="27" Margin="419,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="EditPriceTxt" HorizontalAlignment="Left" Height="27" Margin="419,395,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="DeleteISBNTxt" HorizontalAlignment="Left" Height="27" Margin="602,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
         <Button x:Name="SearchAllBtn" Content="ดูข้อมูลหนังสือทั้งหมด" HorizontalAlignment="Left" Height="33" Margin="240,119,0,0" VerticalAlignment="Top" Width="148" Click="SearchAllBtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="60,222,0,0" TextWrapping="Wrap" Text="ชื่อหนังสือ" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="60,274,0,0" TextWrapping="Wrap" Text="คำอธิบายหนังสือ" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="60,328,0,0" TextWrapping="Wrap" Text="ราคาหนังสือ" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="240,222,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="419,222,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="419,274,0,0" TextWrapping="Wrap" Text="ชื่อหนังสือ" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="419,328,0,0" TextWrapping="Wrap" Text="คำอธิบายหนังสือ" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="419,379,0,0" TextWrapping="Wrap" Text="ราคาหนังสือ" VerticalAlignment="Top" Width="148"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="602,222,0,0" TextWrapping="Wrap" Text="ISBN" VerticalAlignment="Top" Width="148"/>
     </Grid>
 </Window>

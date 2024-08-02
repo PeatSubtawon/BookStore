@@ -62,6 +62,11 @@ namespace BookStore
             {
                 BooksData.AddBooks(inputTitle, inputDescription, inputPrice);
                 MessageBox.Show("เพิ่มข้อมูลหนังสือสำเร็จ!", "Success");
+
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                AddTitleTxt.Text = "";
+                AddDescriptionTxt.Text = "";
+                AddPriceTxt.Text = "";
             }  
         }
         private void SearchBtn_Click(object sender, RoutedEventArgs e)
@@ -76,10 +81,14 @@ namespace BookStore
                     showData += value + "\n";
                 }
                 MessageBox.Show(showData);
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                ISBNTxt.Text = "";
             }
             else
             {
                 MessageBox.Show("ไม่มี ISBN ที่กรอก", "Error");
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                ISBNTxt.Text = "";
             }
         }
 
@@ -92,6 +101,7 @@ namespace BookStore
                 showAllData += value + "\n";
             }
             MessageBox.Show(showAllData);
+            
         }
 
         private void EditBooksBtn_Click(object sender, RoutedEventArgs e)
@@ -108,26 +118,35 @@ namespace BookStore
             {
                 // ถ้าไม่มีข้อมูลหนังสือเก่า ให้แสดงข้อความว่าไม่มี ISBN ที่กรอก
                 MessageBox.Show("ไม่มี ISBN ที่กรอก", "Error");
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                EditISBNTxt.Text = "";
                 return; // ออกจากเมธอดไม่ทำการอัปเดตและไม่แสดงข้อมูลใหม่
             }
-
-            string showOldData = "";
-            foreach (string value in oldBooksData)
-            {
-                showOldData += value + "\n";
+            else 
+            { 
+                string showOldData = "";
+                foreach (string value in oldBooksData)
+                {
+                    showOldData += value + "\n";
+                }
+                // อัปเดตข้อมูลใหม่
+                BooksData.EditBooksData(inputISBN, inputTitle, inputDescription, inputPrice);
+                // ดึงข้อมูลใหม่หลังจากการอัปเดต
+                List<string> newBooksData = BooksData.GetBooks(inputISBN);
+                string showNewData = "";
+                foreach (string value in newBooksData)
+                {
+                    showNewData += value + "\n";
+                }
+                // สร้างข้อความเพื่อแสดงข้อมูลเก่าและใหม่
+                string message = $"ข้อมูลเก่า:\n{showOldData}\n\nข้อมูลใหม่:\n{showNewData}";
+                MessageBox.Show(message, "Success");
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                EditISBNTxt.Text = "";
+                EditTitleTxt.Text = "";
+                EditDescriptionTxt.Text = "";
+                EditPriceTxt.Text = "";
             }
-            // อัปเดตข้อมูลใหม่
-            BooksData.EditBooksData(inputISBN, inputTitle, inputDescription, inputPrice);
-            // ดึงข้อมูลใหม่หลังจากการอัปเดต
-            List<string> newBooksData = BooksData.GetBooks(inputISBN);
-            string showNewData = "";
-            foreach (string value in newBooksData)
-            {
-                showNewData += value + "\n";
-            }
-            // สร้างข้อความเพื่อแสดงข้อมูลเก่าและใหม่
-            string message = $"ข้อมูลเก่า:\n{showOldData}\n\nข้อมูลใหม่:\n{showNewData}";
-            MessageBox.Show(message, "Success");
         }
 
         private void DeleteBooksBtn_Click(object sender, RoutedEventArgs e)
@@ -140,14 +159,18 @@ namespace BookStore
             {
                 // แสดงข้อความหาก ISBN ไม่พบในฐานข้อมูล
                 MessageBox.Show("ไม่มี ISBN ที่กรอก", "Error");
+                DeleteISBNTxt.Text = "";
                 return;
             }
+            else 
+            {
+                // ลบข้อมูลหนังสือ
+                BooksData.DeleteBooksData(inputISBN);
 
-            // ลบข้อมูลหนังสือ
-            BooksData.DeleteBooksData(inputISBN);
-
-            // แสดงข้อความยืนยันการลบ
-            MessageBox.Show("ข้อมูลหนังสือถูกลบเรียบร้อยแล้ว", "Success");
+                // แสดงข้อความยืนยันการลบ
+                MessageBox.Show("ข้อมูลหนังสือถูกลบเรียบร้อยแล้ว", "Success");
+                DeleteISBNTxt.Text = "";
+            }
         }
 
         //-----TEXT CHANGE IN EDIT-----

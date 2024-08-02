@@ -30,39 +30,6 @@ namespace BookStore
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-            // สร้าง StackPanel เพื่อจัดเรียงองค์ประกอบ
-            StackPanel stackPanel = new StackPanel();
-
-            // สร้าง TextBox สำหรับการกรอกข้อมูล
-            TextBox inputTextBox = new TextBox();
-            inputTextBox.Width = 200;
-            inputTextBox.Margin = new Thickness(5);
-            stackPanel.Children.Add(inputTextBox);
-
-            TextBox inputTextBox1 = new TextBox();
-            inputTextBox1.Width = 200;
-            inputTextBox1.Margin = new Thickness(5);
-            stackPanel.Children.Add(inputTextBox1);
-
-            // สร้างปุ่มสำหรับยืนยันข้อมูลที่กรอก
-            Button submitButton = new Button();
-            submitButton.Content = "ยืนยัน";
-            submitButton.Margin = new Thickness(5);
-            submitButton.Click += (s, ev) =>
-            {
-                // ดึงข้อมูลจาก TextBox และแสดงข้อความยืนยัน
-                string inputText = inputTextBox.Text;
-                MessageBox.Show($"คุณกรอกข้อมูลว่า: {inputText}");
-            };
-            stackPanel.Children.Add(submitButton);
-
-            // แทนที่เนื้อหาปัจจุบันด้วย StackPanel ที่มี TextBox และปุ่มยืนยัน
-            this.Content = stackPanel;
-        }
-
         private void RegisterBtn_Click(object sender, RoutedEventArgs e)
         {
             

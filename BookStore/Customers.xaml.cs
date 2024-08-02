@@ -63,6 +63,10 @@ namespace BookStore
             {
                 CustomersData.AddCustomersAccount(inputCustomers_Name, inputAddress, inputEmail);
                 MessageBox.Show("เพิ่มข้อมูลลูกค้าสำเร็จ!", "Success");
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                AddCustomers_NameTxt.Text = "";
+                AddAddressTxt.Text = "";
+                AddEmailTxt.Text = "";
             }
         }
         private void SearchBtn_Click(object sender, RoutedEventArgs e)
@@ -78,10 +82,14 @@ namespace BookStore
                     showData += value + "\n";
                 }
                 MessageBox.Show(showData);
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                Customers_IdTxt.Text = "";
             }
             else 
             {
                 MessageBox.Show("ไม่มี ID ที่กรอก", "Error");
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                Customers_IdTxt.Text = "";
             }
         }
 
@@ -110,26 +118,35 @@ namespace BookStore
             {
                 // ถ้าไม่มีข้อมูลลูกค้าเก่า ให้แสดงข้อความว่าไม่มี ID ที่กรอก
                 MessageBox.Show("ไม่มี ID ที่กรอก", "Error");
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                EditIdTxt.Text = "";
                 return; // ออกจากเมธอดไม่ทำการอัปเดตและไม่แสดงข้อมูลใหม่
             }
-
-            string showOldData = "";
-            foreach (string value in oldCustomerData)
+            else 
             {
-                showOldData += value + "\n";
+                string showOldData = "";
+                foreach (string value in oldCustomerData)
+                {
+                    showOldData += value + "\n";
+                }
+                // อัปเดตข้อมูลใหม่
+                CustomersData.EditCustomersData(inputCustomersId, inputCustomers_Name, inputAddress, inputEmail);
+                // ดึงข้อมูลใหม่หลังจากการอัปเดต
+                List<string> newCustomerData = CustomersData.GetData(inputCustomersId);
+                string showNewData = "";
+                foreach (string value in newCustomerData)
+                {
+                    showNewData += value + "\n";
+                }
+                // สร้างข้อความเพื่อแสดงข้อมูลเก่าและใหม่
+                string message = $"ข้อมูลเก่า:\n{showOldData}\n\nข้อมูลใหม่:\n{showNewData}";
+                MessageBox.Show(message, "Success");
+                // รีเซ็ตข้อความใน TextBox ทั้งหมด
+                EditIdTxt.Text = "";
+                EditCustomers_NameTxt.Text = "";
+                EditAddressTxt.Text = "";
+                EditEmailTxt.Text = "";
             }
-            // อัปเดตข้อมูลใหม่
-            CustomersData.EditCustomersData(inputCustomersId, inputCustomers_Name, inputAddress, inputEmail);
-            // ดึงข้อมูลใหม่หลังจากการอัปเดต
-            List<string> newCustomerData = CustomersData.GetData(inputCustomersId);
-            string showNewData = "";
-            foreach (string value in newCustomerData)
-            {
-                showNewData += value + "\n";
-            }
-            // สร้างข้อความเพื่อแสดงข้อมูลเก่าและใหม่
-            string message = $"ข้อมูลเก่า:\n{showOldData}\n\nข้อมูลใหม่:\n{showNewData}";
-            MessageBox.Show(message, "Success");
         }
 
         private void DeleteCustomersBtn_Click(object sender, RoutedEventArgs e)
@@ -142,14 +159,18 @@ namespace BookStore
             {
                 // แสดงข้อความหาก ID ไม่พบในฐานข้อมูล
                 MessageBox.Show("ไม่มี ID ที่กรอก", "Error");
+                DeleteIdTxt.Text = "";
                 return;
             }
+            else 
+            {
+                // ลบข้อมูลลูกค้า
+                CustomersData.DeleteCustomersData(inputCustomersId);
 
-            // ลบข้อมูลลูกค้า
-            CustomersData.DeleteCustomersData(inputCustomersId);
-
-            // แสดงข้อความยืนยันการลบ
-            MessageBox.Show("ข้อมูลลูกค้าถูกลบเรียบร้อยแล้ว", "Success");
+                // แสดงข้อความยืนยันการลบ
+                MessageBox.Show("ข้อมูลลูกค้าถูกลบเรียบร้อยแล้ว", "Success");
+                DeleteIdTxt.Text = "";
+            }
         }
 
 

@@ -10,6 +10,24 @@
         <Button x:Name="CustomersBtn" Content="จัดการข้อมูลลูกค้า" HorizontalAlignment="Left" Height="58" Margin="134,28,0,0" VerticalAlignment="Top" Width="145" Click="CustomersBtn_Click"/>
         <Button x:Name="BooksBtn" Content="จัดการข้อมูลหนังสือ" HorizontalAlignment="Center" Height="58" Margin="0,28,0,0" VerticalAlignment="Top" Width="144" Click="BooksBtn_Click"/>
         <Button x:Name="TransactionBtn" Content="สั่งซื้อหนังสือ" HorizontalAlignment="Left" Height="58" Margin="531,28,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="2.752,0.587" Click="TransactionBtn_Click"/>
-        
+        <TextBlock HorizontalAlignment="Center" Height="52" Margin="0,91,0,0" TextWrapping="Wrap" Text="สั่งซื้อหนังสือ" VerticalAlignment="Top" Width="172" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="326,153,0,0" TextWrapping="Wrap" Text="เลขISBNของหนังสือ" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="TransactionISBNTxt" HorizontalAlignment="Center" Height="26" Margin="0,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" TextChanged="TransactionISBNTxt_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="ชื่อหนังสือ" VerticalAlignment="Top" Width="148" Margin="531,154,0,0"/>
+        <TextBox x:Name="ShowTitleTxt" HorizontalAlignment="Left" Height="26" Margin="531,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="คำอธิบายหนังสือ" VerticalAlignment="Top" Width="148" Margin="531,198,0,0"/>
+        <TextBox x:Name="ShowDescriptionTxt" HorizontalAlignment="Left" Height="26" Margin="531,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="ราคาหนังสือ" VerticalAlignment="Top" Width="148" Margin="531,242,0,0"/>
+        <TextBox x:Name="ShowPriceTxt" HorizontalAlignment="Left" Height="26" Margin="531,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="326,198,0,0" TextWrapping="Wrap" Text="จำนวน" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="TransactionQuantityTxt" HorizontalAlignment="Center" Height="26" Margin="0,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" TextChanged="TransactionQuantityTxt_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="326,242,0,0" TextWrapping="Wrap" Text="เลขIDของลูกค้า" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="TransactionIdTxt" HorizontalAlignment="Center" Height="26" Margin="0,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" TextChanged="TransactionIdTxt_TextChanged"/>
+        <Button x:Name="OrderBtn" Content="สั่งซื้อ" HorizontalAlignment="Center" Height="32" Margin="0,353,0,0" VerticalAlignment="Top" Width="96" Click="OrderBtn_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" TextWrapping="Wrap" Text="ราคารวม" VerticalAlignment="Top" Width="148" Margin="531,286,0,0"/>
+        <TextBox x:Name="ShowTotalPriceTxt" HorizontalAlignment="Left" Height="26" Margin="531,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" IsEnabled="False"/>
+        <TextBox x:Name="ShowCustomerNameTxt" HorizontalAlignment="Center" Height="26" Margin="0,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Center" Height="18" Margin="0,286,0,0" TextWrapping="Wrap" Text="ชื่อของลูกค้า" VerticalAlignment="Top" Width="144"/>
+
     </Grid>
 </Window>
