@@ -196,7 +196,10 @@ namespace BookStore
                 MessageBox.Show(summary, "สรุปรายการ");
                 MessageBox.Show("การสั่งซื้อสำเร็จและบันทึกข้อมูลเรียบร้อยแล้ว!", "Success");
                 // รีเซ็ตข้อความใน TextBox ทั้งหมด
-                ClearTextBoxes();
+                TransactionISBNTxt.Text = "";
+                TransactionIdTxt.Text = "";
+                TransactionQuantityTxt.Text = "";
+                ShowCustomerNameTxt.Text = "";
             }
         }
 
