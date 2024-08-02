@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\BookStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|C:\\Users\\User\\source\\repos\\BookStore\\bookstore\\transaction.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|c:\\users\\user\\source\\repos\\bookstore\\bookstore\\transaction.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\transaction.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|c:\\users\\user\\source\\repos\\bookstore\\bookstore\\books.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\books.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|C:\\Users\\User\\source\\repos\\BookStore\\bookstore\\transaction.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -23,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\customersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|c:\\users\\user\\source\\repos\\bookstore\\bookstore\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|C:\\Users\\User\\source\\repos\\BookStore\\bookstore\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\customers.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|c:\\users\\user\\source\\repos\\bookstore\\bookstore\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|C:\\Users\\User\\source\\repos\\BookStore\\bookstore\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\menu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -39,11 +43,7 @@
       "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\booksdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|C:\\Users\\User\\source\\repos\\BookStore\\bookstore\\books.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\books.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|c:\\users\\user\\source\\repos\\bookstore\\bookstore\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|C:\\Users\\User\\source\\repos\\BookStore\\bookstore\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{86D18C90-9CBC-4251-B38F-366AA1CB7B19}|BookStore\\BookStore.csproj|solutionrelative:bookstore\\customers.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -68,14 +68,14 @@
               "RelativeDocumentMoniker": "BookStore\\Transaction.xaml.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\Transaction.xaml.cs",
               "RelativeToolTip": "BookStore\\Transaction.xaml.cs",
-              "ViewState": "AQIAAJ0AAAAAAAAAAAAowL4AAABAAAAA",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAowMYAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-01T19:08:24.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "BookStore\\MainWindow.xaml.cs",
@@ -83,12 +83,11 @@
               "RelativeToolTip": "BookStore\\MainWindow.xaml.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAQwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T21:03:58.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T21:03:58.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TransactionsData.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\TransactionsData.cs",
               "RelativeDocumentMoniker": "BookStore\\TransactionsData.cs",
@@ -96,12 +95,11 @@
               "RelativeToolTip": "BookStore\\TransactionsData.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAC0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T19:08:25.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T19:08:25.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Transaction.xaml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\Transaction.xaml",
               "RelativeDocumentMoniker": "BookStore\\Transaction.xaml",
@@ -113,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Customers.xaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\Customers.xaml.cs",
               "RelativeDocumentMoniker": "BookStore\\Customers.xaml.cs",
@@ -121,12 +119,11 @@
               "RelativeToolTip": "BookStore\\Customers.xaml.cs",
               "ViewState": "AQIAAGUAAAAAAAAAAAAuwDgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T18:53:56.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-02T18:53:56.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CustomersData.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\CustomersData.cs",
               "RelativeDocumentMoniker": "BookStore\\CustomersData.cs",
@@ -134,12 +131,24 @@
               "RelativeToolTip": "BookStore\\CustomersData.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwCQAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T19:17:51.872Z",
+              "WhenOpened": "2024-08-01T19:17:51.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Books.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\Books.xaml.cs",
+              "RelativeDocumentMoniker": "BookStore\\Books.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\Books.xaml.cs",
+              "RelativeToolTip": "BookStore\\Books.xaml.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAcwGYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T19:15:26.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\MainWindow.xaml",
               "RelativeDocumentMoniker": "BookStore\\MainWindow.xaml",
@@ -151,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Menu.xaml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\Menu.xaml",
               "RelativeDocumentMoniker": "BookStore\\Menu.xaml",
@@ -175,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "BooksData.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\BooksData.cs",
               "RelativeDocumentMoniker": "BookStore\\BooksData.cs",
@@ -183,8 +192,7 @@
               "RelativeToolTip": "BookStore\\BooksData.cs",
               "ViewState": "AQIAAC8AAAAAAAAAAAAwwE8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T19:14:37.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-01T19:14:37.012Z"
             },
             {
               "$type": "Document",
@@ -197,40 +205,6 @@
               "ViewState": "AQIAABQAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T12:21:14.918Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "1a09e72d-64c4-4d5d-b992-d2af4f7e5e18",
-        "Display": 1,
-        "X": 137,
-        "Y": 202,
-        "Width": 1553,
-        "Height": 776,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Books.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\Books.xaml.cs",
-              "RelativeDocumentMoniker": "BookStore\\Books.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\BookStore\\BookStore\\Books.xaml.cs",
-              "RelativeToolTip": "BookStore\\Books.xaml.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAcwGYAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T19:15:26.548Z",
-              "EditorCaption": ""
             }
           ]
         }
